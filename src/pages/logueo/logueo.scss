@@ -1,0 +1,68 @@
+
+
+
+page-logueo {
+
+  img {
+    max-width:50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-name: spinner-loading
+  }
+
+  @keyframes spinner-loading{
+    0% {
+        transform: rotate(0deg)
+    } to {
+        transform: rotate(1turn)
+    }
+  }
+
+
+  .top-20 {
+    margin-top:20%
+  }
+
+  .item-md {
+    background-color: transparent!important;
+    padding-left: 0px!important;
+  }
+  
+  .divider {
+      display: flex;
+      
+      &:before,
+      &:after {
+        content: "";
+        flex: 1;
+      }
+  }
+
+  .line {
+      align-items: center;
+      margin: 1em -1em;
+      color: #cccccc;
+      
+      &:before,
+      &:after {
+        height: 1px;
+        margin: 0 1em;
+      }
+  } 
+
+  .one-line {
+      &:before,
+      &:after {
+         background: #cccccc;
+      }
+  }
+
+  .registrate {
+    background-color:transparent;
+    border: 1px solid white;
+  }
+  .registrate:hover {
+    background-color:black!important
+  }
+}

@@ -1,0 +1,28 @@
+<ion-content style='position:relative;'>
+  <ion-refresher (ionRefresh)="recargarPagina($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <div class="general">
+    <div class="particular" *ngFor="let item of _cap.imagenes" [navPush]='modalPage' [navParams]="{ imagen: [item.img, item.titulo] }">
+      <img src="{{item.img}}">
+    </div>
+  </div>
+
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  
+  <ion-buttons style='display: flex; justify-content: space-between; width:100%;position:absolute; bottom:0'>
+    <button ion-fab color="blanco" [navPush]='subirImagen'>
+      <ion-icon name="photos" color="verde"></ion-icon>
+    </button>
+    <button ion-fab color="blanco" (click)='cerrarSesion()'>
+      <ion-icon name="unlock" color="danger"></ion-icon>
+    </button>
+  </ion-buttons> 
+</ion-footer>

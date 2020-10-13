@@ -1,0 +1,40 @@
+page-introduccion {
+	ion-content {
+		background-color:white!important
+	}
+	
+
+	.slide-zoom {
+	  height: 100%;
+	}
+
+	.slide-title {
+	  margin-top: 2.8rem;
+	}
+
+	.slide-image {
+	  max-height: 50%;
+	  max-width: 60%;
+	  margin: 18px 0;
+	}
+
+	b {
+	  font-weight: 500;
+	}
+
+	h2 {
+		color: #FFFFFF;
+		text-shadow: 0 0 0px #FFF, 0 0 0px #FFF, 0 0 0px #FFF, 0 0 10px #d9d9d9, 0 0 10px #d9d9d9, 0 0 10px #d9d9d9, 0 0 25px #d9d9d9, 0 0 25px #d9d9d9;
+	}
+	p {
+	  padding: 0 40px;
+	  font-size: 14px;
+	  line-height: 1.5;
+	  color: #d9d9d9;
+
+	  b {
+	    color: #000000;
+	  }
+	}
+
+}
